@@ -3,9 +3,6 @@
 // include an else to handle incorrect form inputs. Show a message to user that they've made an error.
 
 //Get the input from the form to show on console.log
-
-
-
 window.onload = function() {
   const form = document.querySelector("form");
 
@@ -26,17 +23,12 @@ window.onload = function() {
 
   if (input === "turtle") {
     turtleInfo.removeAttribute("class");
-  } 
-  else if (input === "snake") {
+  } else if (input === "snake") {
     snakeInfo.removeAttribute("class");
-  } 
-  else if (input === "insects") {
+  } else if (input === "insects") {
     insectsInfo.removeAttribute("class");
-  } 
-  else {
+  } else {
     anythingElseInfo.removeAttribute("class");
   }
-
-
   };
 };
