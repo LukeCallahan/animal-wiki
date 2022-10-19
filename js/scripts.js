@@ -13,6 +13,30 @@ window.onload = function() {
     event.preventDefault();
     let input = document.querySelector("input#animal").value;
 
-    console.log(input);
+    let turtleInfo = document.getElementById("turtle");
+    turtleInfo.setAttribute("class", "hidden");
+    let snakeInfo = document.getElementById("snake");
+    snakeInfo.setAttribute("class", "hidden");
+    let insectsInfo = document.getElementById("insects");
+    insectsInfo.setAttribute("class", "hidden");
+    let anythingElseInfo = document.getElementById("anythingElse");
+    anythingElseInfo.setAttribute("class", "hidden");
+  
+  // check the form input to see if it matches, turtle, snake, or insects, otherwise, tell them go find a dictionary
+
+  if (input === "turtle") {
+    turtleInfo.removeAttribute("class");
+  } 
+  else if (input === "snake") {
+    snakeInfo.removeAttribute("class");
+  } 
+  else if (input === "insects") {
+    insectsInfo.removeAttribute("class");
+  } 
+  else {
+    anythingElseInfo.removeAttribute("class");
+  }
+
+
   };
-}
+};
